@@ -1,0 +1,23 @@
+#!/bin/bash
+
+ 
+
+ 
+
+cd "`dirname "$0"`"
+
+ 
+
+ 
+
+for file in *.aif
+
+do
+
+filename="$( basename "$file" .aif)"
+
+# do something on "$file"
+
+                ffmpeg -i "${filename}.aif" -i "${filename}.mp4" -map 0:0 -map 1:0 -acodec libfdk_aac -b:a 192k -vcodec copy -shortest "${filename}_output.mp4"
+
+done
