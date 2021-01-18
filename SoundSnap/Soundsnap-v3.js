@@ -4,7 +4,7 @@
 // @version      1.3
 // @description  try to take over the world!
 // @author       Tjalle
-// @match        https://soundsnap.com/*
+// @match        https://www.soundsnap.com/*
 // @grant        none
 // ==/UserScript==
 
