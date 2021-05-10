@@ -12,17 +12,13 @@
 
 (function () {
     'use strict';
+    // Used console commands for reference:
     // wavesurfer[node-*****]["mediaContainer"]["children"][2]
     // wavesurfer[201211]["mediaContainer"]["children"][2].getAttribute('src')
     // var elements = document.getElementsByClassName("ojoo-teaser");
 
-
-
-
-    $(document).ready(function () { //When document has loaded
-
+    $(document).ready(function () { // When document has loaded
         setTimeout(function () {
-
             var elements = document.getElementsByClassName("ojoo-teaser");
 
             elements.forEach(element => {
@@ -35,16 +31,8 @@
                 var newHTML = '<a href="' + link + '">' + originalHTML + '</a>';
 
                 element.children[0].children[0].children[0].children[1].innerHTML = newHTML;
-
-
-
             });
-
         }, 3500); //Two 3.5 seconds that will be waited before executeion
 
     });
-
-
-
-
 })();
