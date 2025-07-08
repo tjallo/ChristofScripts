@@ -25,8 +25,8 @@
       waveIds.forEach((id) => {
         const container = document.getElementById(`node-${id}`).children[0]
           .children[0];
+          
         const audioDescEl = container.children[2];
-
         const textContent = audioDescEl.textContent;
         const url = wavesurfer[id].backend.song;
 
