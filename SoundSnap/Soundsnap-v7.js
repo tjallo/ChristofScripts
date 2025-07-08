@@ -14,7 +14,6 @@
   "use strict";
 
   $(document).ready(function () {
-    // When document has loaded
     setTimeout(function () {
       let waveIds = [];
       document.getElementsByClassName("wave-container").forEach((el) => {
